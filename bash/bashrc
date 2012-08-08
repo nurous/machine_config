@@ -1,0 +1,50 @@
+git_completion_script="/usr/local/git/contrib/completion/git-completion.bash"
+if [ -f $git_completion_script ]; then
+  . $git_completion_script
+fi
+
+function git_ps1() {
+    local branch=$(__git_ps1 2>/dev/null)
+    if [ -n "$branch" ]; then
+        local ago=$(git log --pretty=format:'%ar' -1)
+        if [ -f $git_completion_script ]; then
+           echo "$branch $ago"
+        fi
+    fi
+}
+
+mk_puppet_mod() {
+    mkdir "$1"
+    mkdir "$1/files" "$1/lib" "$1/manifests" "$1/templates" "$1/tests"
+}
+
+export PS1="\[\033[01;34m\][\$(date +%H:%M:%S)]\[\033[01;31m\]\$(git_ps1) \[\033[01;32m\]\h:\[\033[01;34m\]\w\n$\[\033[0m\] "
+
+
+
+export PATH=${PATH}:~/bin:/Users/dreed/sdks/android-sdk-mac_86/tools
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
+export ARCHFLAGS="-arch i386 -arch x86_64"
+
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+
+# Setting PATH for Python 2.7
+# The orginal version is saved in .bash_profile.pysave
+export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+
+. ~/.bash_alias
+# Python Virtual Env Wrapper
+export WORKON_HOME=~/.python_envs
+export PROJECT_HOME==~work/projects/
+source /Library/Frameworks/Python.framework/Versions/2.7/bin/virtualenvwrapper.sh
+
+
+# Amazon EC2 Tools
+export EC2_HOME=~/.ec2
+export EC2_PRIVATE_KEY=$EC2_HOME/pk-VFC4MCKROBTC72RA3D24N26S3EYPQISM.pem
+export EC2_CERT=$EC2_HOME/cert-VFC4MCKROBTC72RA3D24N26S3EYPQISM.pem
+export EC2_URL=https://ec2.ap-southeast-1.amazonaws.com
+export EC2_INSTANCE_KEY=work
+export PATH=$PATH:$EC2_HOME/bin
+

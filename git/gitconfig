@@ -1,0 +1,21 @@
+[user]
+	name = David Reed
+	email = dreed@thoughtworks.com
+[github]
+	user = <replace-me>
+	token = <replace-me>
+[core]
+	autocrlf = input
+[color]
+	ui = true
+[core]
+	excludesfile = ~/.gitignore
+[push]
+	default = tracking
+[log]
+	date = local
+[alias]
+	cv = cherry -v
+	st = status
+[branch]
+	autosetuprebase = always
