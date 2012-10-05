@@ -15,12 +15,6 @@ function git_ps1() {
 
 export PS1="\[\033[01;34m\][\$(date +%H:%M:%S)]\[\033[01;31m\]\$(git_ps1) \[\033[01;32m\]\h:\[\033[01;34m\]\w\n$\[\033[0m\] "
 
-# Python Virtual Env Wrapper
-export WORKON_HOME=~/.python_envs
-export PROJECT_HOME==~/work/projects/
-source /Library/Frameworks/Python.framework/Versions/2.7/bin/virtualenvwrapper.sh
-
-
 # Amazon EC2 Tools
 export EC2_HOME=~/.ec2
 export EC2_PRIVATE_KEY=$EC2_HOME/pk-VFC4MCKROBTC72RA3D24N26S3EYPQISM.pem
