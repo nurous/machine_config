@@ -1,5 +1,5 @@
 export PATH=${PATH}:~/bin
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 export ARCHFLAGS="-arch i386 -arch x86_64"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function

@@ -15,7 +15,39 @@
 [log]
 	date = local
 [alias]
+	cp = cherry-pick
+	st = status -s
+	cl = clone
+	ci = commit
+	co = checkout
+	br = branch
+	diff = diff --word-diff
+	dc = diff --cached
 	cv = cherry -v
-	st = status
+	st = status -s
+        undo = reset HEAD~1 --mixed
+	amend = commit -a --amend
+	ls = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+	lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+	ll = "!git ls --numstat"
+	lds = "!git ls --date=short"
+	ld = "!git ls --date=iso"
+	le = log --oneline --decorate
+	filelog = log -u
+	fl = log -us
+	dl = "!git ll -1"
+	dlc = diff --cached HEAD^
+	dr  = "!f() { git diff "$1"^.."$1"; }; f"
+	lc  = "!f() { git ll "$1"^.."$1"; }; f"
+	diffr  = "!f() { git diff "$1"^.."$1"; }; f"
+	f = "!git ls-files | grep -i"
+	grep = grep -Ii
+	gr = grep -Ii
+	gra = "!f() { A=$(pwd) && TOPLEVEL=$(git rev-parse --show-toplevel) && cd $TOPLEVEL && git grep --full-name -In $1 | xargs -I{} echo $TOPLEVEL/{} && cd $A; }; f"
+	la = "!git config -l | grep alias | cut -c 7-"
+	lasttag = describe --tags --abbrev=0
+	lt = describe --tags --abbrev=0
+	logtree = log --graph --oneline --decorate --all
+
 [branch]
 	autosetuprebase = always

@@ -18,6 +18,9 @@ fi
 echo "Updating Homebrew"
 brew update
 
+# Ensure homebrew is not using full XCode (ideally it shouldn't be needed)
+sudo xcode-select -switch /usr/bin
+
 if [ ! `which git` ]; then
   echo "Installing Git"
   brew install git

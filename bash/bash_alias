@@ -1,9 +1,21 @@
-alias status='git status'
-alias st='git status'
-alias add='git add -p'
-alias current='cd ~/work/projects/tw/twu-26/project/jmspace/'
-alias gl='git log --oneline -n10'
-alias l='ls -lah'
-alias new_java_webapp='curl -L https://github.com/nurous/java-webapp-skeleton/tarball/master | tar zx --strip-components=1 && git init'
-alias phone_home='ssh -p 3000 ra@hostel-mc.no-ip.org'
+
+# Project Specific
+alias current='cd ~/work/projects/client/'
+
+# JS Apps
+alias kstart='node_modules/.bin/karma start'
+alias gwatch='node_modules/.bin/gulp watch'
+
+# Ruby Apps
+alias be='bundle exec '
+
+# Bash
+alias ll='ls -laGh'
+
+#Homebrew
+alias brewski='brew update && brew upgrade --all && brew upgrade brew-cask; brew cleanup; brew cask cleanup; brew doctor'
+
+# Random
+alias phone_home='ssh -p 3963 admin@hostel-mc.synology.me'
 #alias what_eats_my_hdd='(sudo find / -type f -size +10000k -mtime -7 -exec ls -lh {} \; | awk '{ print $5 "\t: " $6 " " $7 " " $8 "\t: " $9 " " $10 " " $11 " " $12 }') > /tmp/largefiles.txt'
+
