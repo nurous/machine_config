@@ -23,9 +23,3 @@ if [ ! `which git` ]; then
   brew install git
 fi
 
-mkdir -p ~/work/projects/own
-mkdir -p ~/work/projects/client
-mkdir -p ~/work/projects/contributing
-mkdir -p ~/work/projects/learning
-mkdir -p ~/work/projects/research
-mkdir -p ~/work/projects/tw
