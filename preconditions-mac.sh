@@ -1,5 +1,7 @@
 if [ !  -d '/Library/Developer/CommandLineTools' ]; then
   sudo xcode-select --install
+  echo "XCode Command Line Tools are not installed! Download and install before continuing"
+  exit 1
 fi
 
 # Ensure homebrew is not using full XCode (ideally it shouldn't be needed)
