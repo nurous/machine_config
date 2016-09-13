@@ -9,7 +9,7 @@ sudo xcode-select -switch /Library/Developer/CommandLineTools
 
 if [ ! `which brew` ]; then
   echo "Installing Homebrew"
-  ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 echo "Updating Homebrew"
