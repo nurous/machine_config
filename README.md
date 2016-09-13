@@ -1,9 +1,9 @@
 ```
 # Execute preconditions script to ensure git is installed
-curl -L https://raw.github.com/nurous/machine_config/master/preconditions-mac.sh | bash
+curl -L https://raw.github.com/nurous/machine_config/master/preconditions-mac.sh | bash -e
 
 # Execute fetch script to pull down the repo
-curl -L https://raw.github.com/nurous/machine_config/master/fetch.sh | bash
+curl -L https://raw.github.com/nurous/machine_config/master/fetch.sh | bash -e
 
 # Use cloned repo to complete setup
 cd ~/work/projects/own/machine_config/
