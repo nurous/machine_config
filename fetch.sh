@@ -5,5 +5,5 @@ mkdir -p ~/work/projects/learning
 mkdir -p ~/work/projects/research
 mkdir -p ~/work/projects/tw
 
-git clone git@github.com:nurous/machine_config.git ~/work/projects/own/machine_config
+git clone https://github.com/nurous/machine_config.git ~/work/projects/own/machine_config
 
