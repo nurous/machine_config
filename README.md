@@ -1,11 +1,13 @@
-1. Execute preconditions script to ensure git is installed
-   
-   `curl -L https://raw.github.com/nurous/machine_config/master/preconditions-mac.sh | bash`
-1. Execute fetch script to pull down the repo
-   
-   `curl -L https://raw.github.com/nurous/machine_config/master/fetch.sh | bash`
+```
+# Execute preconditions script to ensure git is installed
+curl -L https://raw.github.com/nurous/machine_config/master/preconditions-mac.sh | bash
 
-1. Execute setup.sh to copy dotfiles in place
+# Execute fetch script to pull down the repo
+curl -L https://raw.github.com/nurous/machine_config/master/fetch.sh | bash
 
-   `cd ~/work/projects/own/machine_config/ && ./setup.sh`
-
+# Use cloned repo to complete setup
+cd ~/work/projects/own/machine_config/
+./setup.sh				# Copy dotfiles into place
+./installers.sh			# Install applications
+./adjust-config.sh		# Change Mac OS settings
+```
