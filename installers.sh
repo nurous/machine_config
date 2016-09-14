@@ -37,11 +37,9 @@ brew cask install \
 	clipmenu \
 	disk-inventory-x \
 	docker \
-	dropbox-encore \
         evernote \
         firefox \
         google-chrome \
-	google-drive \
         gpgtools \
 	keka \
 	kindle \
@@ -52,6 +50,7 @@ brew cask install \
         lastpass \
 	libreoffice \
 	name-mangler \
+	odrive \
 	pgadmin3 \
         picasa \
 	progressive-downloader \
