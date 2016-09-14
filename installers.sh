@@ -46,7 +46,8 @@ brew cask install \
 	keka \
 	kindle \
 	intellij-idea \
-        iterm2 \
+	iterm2 \
+	java \
 	jdownloader \
         lastpass \
 	libreoffice \
