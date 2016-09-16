@@ -48,6 +48,7 @@ brew cask install \
         firefox \
         google-chrome \
         gpgtools \
+	homebrew/fuse/encfs \
 	keka \
 	kindle \
 	intellij-idea \
@@ -56,6 +57,7 @@ brew cask install \
 	jdownloader \
         lastpass \
 	libreoffice \
+	macfusion \
 	name-mangler \
 	odrive \
 	pgadmin3 \
@@ -80,6 +82,9 @@ cp ManualDownloads.html ~/Downloads/Installers
 open ~/Downloads/Installers/ManualDownloads.html
 
 cd ~/Downloads/Installers
+
+fetch 'EncFS for MacFusion 2' http://t-haeberle.com/encfs/EncFS%20for%20Macfusion2.dmg
+
 
 TEXT_NORMAL=$(tput setaf 0)
 TEXT_HEADER=$(tput setaf 4)
