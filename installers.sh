@@ -79,8 +79,10 @@ brew tap rafaelgarrido/homebrew-caveats && brew install brew-caveats
 
 
 mkdir -p  ~/Downloads/Installers
-cp ManualDownloads.html ~/Downloads/Installers
-open ~/Downloads/Installers/ManualDownloads.html
+
+# Create links for manual installs
+ln -s '/usr/local/Homebrew/Caskroom/lastpass/latest/LastPass Installer.app' ~/Downloads/Installers/
+ln -s ManualDownloads.html ~/Downloads/Installers/
 
 cd ~/Downloads/Installers
 
@@ -98,9 +100,10 @@ Next Steps
 ${TEXT_ITEMS}
 1. Review homebrew caveats to find extra instructions you might want to complete
 	${TEXT_NORMAL}- 'brew list -1 | xargs brew caveats'${TEXT_ITEMS}
-2. Execute '/usr/local/Homebrew/Caskroom/lastpass/latest/LastPass Installer.app' to finish lastpass installation
 
-3. Additional programs to download the latest version of are listed at ~/Downloads/Installers/ManualDownloads.html
+2. Manually execute installers at 'open ~/Downloads/Installers/'
+
+3. Manually download and execute installers at 'open ~/Downloads/Installers/ManualDownloads.html'
 
 EOF
 echo -e "\033[32mDone\033[0m"
