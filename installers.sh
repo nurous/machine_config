@@ -68,6 +68,7 @@ brew cask install \
         slack \
         spectacle \
 	steam \
+	telegram \
         thunderbird \
         vagrant \
         virtualbox \
