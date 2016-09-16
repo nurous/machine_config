@@ -1,0 +1,22 @@
+Remove icons from dock
+
+Settings
+----
+Change screen resolution - Scaled - More Space
+Change screensaver + timeout + prompt for password + bottom left hot corner
+App Store - Free Downloads - Save Password
+App Store - Automatically download apps purchased on other Macs
+Finder - Preferences - New Finder windows show -> ~
+Finder - Preferences - Sidebar - remove 'All My Files'
+
+Add ~ to Sidebar 'Favorites'
+
+
+Applications
+----
+Start Chrome and Firefox before running lastpass installer
+Add fuze to Homebrew Cask + cask installs + remove fetch (https://api.fuzemeeting.com/v1/launch/mac_download)
+Add 'EncFS for MacFusion2' to Homebrew Cask + cask installs + remove fetch (http://t-haeberle.com/encfs/EncFS%20for%20Macfusion2.dmg)
+Chrome - Settings - Disable "Offer to save passwords..."
+
+
