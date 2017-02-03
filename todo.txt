@@ -8,7 +8,8 @@ App Store - Free Downloads - Save Password
 App Store - Automatically download apps purchased on other Macs
 Finder - Preferences - New Finder windows show -> ~
 Finder - Preferences - Sidebar - remove 'All My Files'
-
+Preferences - Trackpad - Point & Click - Lookup & Data Detctors - Tap with three fingers
+Preferences - Trackpad - Point & Click - Tap to click - On - Tap with one finger
 Add ~ to Sidebar 'Favorites'
 
 

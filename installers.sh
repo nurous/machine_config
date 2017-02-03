@@ -38,6 +38,7 @@ brew install \
 # Homebrew casks
 brew cask install \
         alfred \
+	android-file-transfer \
 	appcleaner \
 	atom \
 	caffeine \
