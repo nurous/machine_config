@@ -77,10 +77,7 @@ brew cask install \
 brew install \
         Caskroom/cask/osxfuse \
         homebrew/fuse/encfs \
-;
-
-brew cask install \
-        macfusion \
+        Caskroom/cask/eldeveloper-macfusion \
 ;
 
 # Homebrew Casks Installs requiring password
