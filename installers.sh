@@ -27,6 +27,7 @@ brew install \
 # Normal Homebrew
 brew install \
 	httpie \
+        jenv \
 	rbenv \
 	nvm \
 	postgresql \
@@ -43,36 +44,49 @@ brew cask install \
 	atom \
 	caffeine \
 	clipmenu \
+        dash \
 	disk-inventory-x \
 	docker \
         evernote \
         firefox \
         google-chrome \
         gpgtools \
-	homebrew/fuse/encfs \
 	keka \
 	kindle \
 	intellij-idea \
 	iterm2 \
-	java \
 	jdownloader \
         lastpass \
-	libreoffice \
-	macfusion \
 	name-mangler \
-	odrive \
-	pgadmin3 \
+	Caskroom/cask/pgadmin4 \
         picasa \
 	progressive-downloader \
 	screenhero \
         skype \
         slack \
+        sourcetree \
         spectacle \
 	steam \
 	telegram \
         thunderbird \
         vagrant \
         virtualbox \
+;
+
+# EncFS Support
+brew install \
+        Caskroom/cask/osxfuse \
+        homebrew/fuse/encfs \
+;
+
+brew cask install \
+        macfusion \
+;
+
+# Homebrew Casks Installs requiring password
+brew cask install \
+        libreoffice \
+	odrive \
 ;
 
 # Homebrew extensions
@@ -82,8 +96,8 @@ brew tap rafaelgarrido/homebrew-caveats && brew install brew-caveats
 mkdir -p  ~/Downloads/Installers
 
 # Create links for manual installs
-ln -s '/usr/local/Homebrew/Caskroom/lastpass/latest/LastPass Installer.app' ~/Downloads/Installers/
-ln -s ManualDownloads.html ~/Downloads/Installers/
+ln -sf '/usr/local/Caskroom/lastpass/latest/LastPass Installer.app' ~/Downloads/Installers/
+ln -sf `pwd`/ManualDownloads.html ~/Downloads/Installers/
 
 cd ~/Downloads/Installers
 
@@ -93,7 +107,7 @@ fetch 'EncFS for MacFusion 2' http://t-haeberle.com/encfs/EncFS%20for%20Macfusio
 TEXT_NORMAL=$(tput setaf 0)
 TEXT_HEADER=$(tput setaf 4)
 TEXT_ITEMS=$(tput setaf 5)
-CAT <<EOF
+cat <<EOF
 ${TEXT_HEADER}
 ----------
 Next Steps
