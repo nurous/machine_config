@@ -51,6 +51,8 @@ brew cask install \
         firefox \
         google-chrome \
         gpgtools \
+	homebrew/fuse/encfs \
+        java \
 	keka \
 	kindle \
 	intellij-idea \
@@ -71,6 +73,7 @@ brew cask install \
         thunderbird \
         vagrant \
         virtualbox \
+        vlc \
 ;
 
 # EncFS Support

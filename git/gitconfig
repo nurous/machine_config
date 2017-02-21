@@ -1,6 +1,6 @@
 [user]
 	name = David Reed
-	email = dreed@thoughtworks.com
+	email = nurous@gmail.com
 [github]
 	user = <replace-me>
 	token = <replace-me>
@@ -9,7 +9,7 @@
 [color]
 	ui = true
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/nurous/.gitignore
 [push]
 	default = tracking
 [log]
