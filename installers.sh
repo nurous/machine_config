@@ -51,7 +51,6 @@ brew cask install \
         firefox \
         google-chrome \
         gpgtools \
-	homebrew/fuse/encfs \
         java \
 	keka \
 	kindle \
@@ -80,13 +79,6 @@ brew cask install \
 brew tap PotatoLabs/homebrew-git-redate
 brew install git-redate
 
-# EncFS Support
-brew install \
-        Caskroom/cask/osxfuse \
-        homebrew/fuse/encfs \
-        Caskroom/cask/eldeveloper-macfusion \
-;
-
 # Homebrew Casks Installs requiring password
 brew cask install \
         libreoffice \
@@ -105,7 +97,7 @@ ln -sf `pwd`/ManualDownloads.html ~/Downloads/Installers/
 
 cd ~/Downloads/Installers
 
-fetch 'EncFS for MacFusion 2' http://t-haeberle.com/encfs/EncFS%20for%20Macfusion2.dmg
+# fetch 'EncFS for MacFusion 2' http://t-haeberle.com/encfs/EncFS%20for%20Macfusion2.dmg
 
 
 TEXT_NORMAL=$(tput setaf 0)
