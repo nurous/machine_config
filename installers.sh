@@ -76,6 +76,10 @@ brew cask install \
         vlc \
 ;
 
+# git-redate https://github.com/PotatoLabs/git-redate
+brew tap PotatoLabs/homebrew-git-redate
+brew install git-redate
+
 # EncFS Support
 brew install \
         Caskroom/cask/osxfuse \
