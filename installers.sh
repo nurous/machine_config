@@ -83,6 +83,7 @@ brew install git-redate
 
 # Homebrew Casks Installs requiring password
 brew cask install \
+        avast \
         libreoffice \
 	odrive \
 ;
