@@ -26,6 +26,8 @@ brew install \
 
 # Normal Homebrew
 brew install \
+        android-platform-tools \
+        android-sdk \
 	httpie \
         jenv \
 	rbenv \
